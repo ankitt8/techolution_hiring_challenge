@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.mainContainer {
+    display: flex;
+    height: 100vh;
+    
+    /* border: 1px solid black;
+    border-radius: 10px; */
+    justify-content: center;
+    align-items: center;
+}
+table {
+    width: 70vh;
+}
+.italics {
+    font-style: italic;
+}
+th {
+    font-size: 18px;
+    text-align: left;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+   
+    
+}
+th , td {
+    padding:10px;
+    margin:10px;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
+
+.alignRight {
+    text-align: right;
+}
