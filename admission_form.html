@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="formContainer">
+        <form id="admission_form">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="only alphabets a-zA-Z, max character size-20" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="only alphabets a-zA-Z, max character size-20" required>
+
+            <label for="classname">Class</label>
+            <input type="text" id="classname" name="class" placeholder="only numeric and string values" required>
+
+            <label for="yearofpassing">Year of Passing</label>
+            <input type="text" id="yearofpassing" name="yofpassing" placeholder="only year after 2017(exclusive)" required>
+
+            <label for="percentage">Percentage of marks</label>
+            <input type="text" id="percentage" name="percentagemarks" placeholder="only number(%) upto 2 decimal places " required>
+
+
+            <input type="submit" value="Submit" id="admission_submit">
+        </form>
+    </div>
+    <script src="./admission_script.js"></script>
+
+</body>
+
+</html>

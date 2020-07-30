@@ -6,10 +6,11 @@ function createTable(data) {
     const topperScore = getTopperScore(data);
     setStatusOfStudents(data, topperScore);
 
-    tableElement = document.querySelector('table');
-    headerList = ['Student Name', 'Roll Number', 'Total Marks', 'Status'];
+    const tableElement = document.querySelector('table');
+    console.log(tableElement)
+    const headerList = ['Student Name', 'Roll Number', 'Total Marks', 'Status'];
     generateTableHeader(tableElement, headerList);
-    
+
     const fragment = document.createDocumentFragment();
     const fieldsToDisplay = ['name', 'rollNumber', 'totalMarks', 'status']
     for (let i = 0; i < data.length; ++i) {
@@ -44,6 +45,7 @@ function compare(studenta, studentb) {
     return 0;
 }
 function generateTableHeader(tableElement, headerList) {
+    // const tableElement = document.querySelector('table');
     const mainHeading = "Students Result Board";
     const fragment = document.createDocumentFragment();
     // adding main header row
@@ -94,7 +96,7 @@ function setStatusOfStudents(data, topperScore) {
         if (data[i].totalMarks == topperScore) data[i].status = 'Topper';
         else if (passStatus) data[i].status = 'Pass';
         else data[i].status = 'Fail';
-        console.log(data[i])
+        // console.log(data[i])
     }
 }
 fetch('./data.json')
@@ -102,3 +104,6 @@ fetch('./data.json')
     .then(data => {
         createTable(data);
     });
+
+
+
